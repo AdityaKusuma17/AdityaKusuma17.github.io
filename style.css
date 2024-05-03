@@ -1,0 +1,266 @@
+scrol body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.jumbotron {
+  width: 80%; /* Sesuaikan lebar dengan container biodata diri */
+  padding: 20px 0;
+  background-color: #f0f0f0;
+  color: black;
+  text-align: center;
+  margin: 20px auto; /* Tambahkan margin auto untuk pusat */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 101px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.text-content {
+  text-align: left;
+}
+.name,
+.email,
+.bio {
+  margin: 10px 0;
+}
+
+.jumbotron h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.jumbotron button {
+  margin-top: 60px;
+  background-color: rgb(73, 183, 252);
+  padding: 20px;
+  width: 400px;
+  border-radius: 50px;
+  border: none;
+}
+
+.jumbotron button:hover {
+  background-color: #273036;
+  border: 1px solid black;
+  color: rgb(73, 183, 252);
+}
+
+h1 span:before {
+  content: "";
+  animation: gerak infinite 8s ease;
+  transform: translate(-50%);
+  color: rgb(73, 183, 252);
+  font-family: 100px;
+}
+
+@keyframes gerak {
+  0% {
+    content: "Selamat Datang";
+  }
+  50% {
+    content: "Saya I Putu Aditya Kusuma Putra";
+  }
+  100% {
+    content: "Terimakasih sudah singgah namun tak sungguh!";
+  }
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  align-items: center;
+}
+
+.skills h2 {
+  color: #007bff;
+  margin-bottom: 20px; /* Tambahkan margin bawah yang lebih besar */
+  width: 100%; /* Membuat judul mengambil seluruh lebar */
+  text-align: center; /* Teks judul di tengah */
+}
+
+.skills ul {
+  list-style-type: none; /* Menghilangkan bullet points */
+  padding: 0;
+  display: flex; /* Menampilkan daftar secara horizontal */
+}
+
+.skills li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee; /* Garis pemisah antar item */
+  flex: 1; /* Menyebarkan item secara merata */
+}
+
+.skills li:last-child {
+  border-bottom: none; /* Menghilangkan garis di item terakhir */
+}
+
+.keahlian,
+img {
+  width: 100px;
+  height: 100px;
+}
+.pendidikan {
+  width: 80%;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around; /* Menyebarkan box secara merata */
+  align-items: center; /* Menyelaraskan box secara vertikal */
+}
+
+.education-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  width: 150px; /* Atur lebar box */
+  text-align: center; /* Teks di tengah */
+  transition: transform 0.3s ease-in-out; /* Menambahkan transisi untuk efek hover */
+}
+
+.education-item img {
+  width: 100px; /* Atur ukuran gambar */
+  height: auto; /* Menjaga rasio aspek gambar */
+  margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+.education-item:hover {
+  transform: scale(1.1); /* Membuat item sedikit lebih besar saat di-hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Menambahkan shadow yang lebih dalam saat hover */
+}
+
+.pendidikan h2 {
+  color: #007bff;
+  width: 100%; /* Membuat judul mengambil seluruh lebar */
+  text-align: center; /* Teks judul di tengah */
+  margin-bottom: 20px; /* Memberi jarak antara judul dan box */
+}
+
+.sosial-media {
+  display: flex;
+  justify-content: space-around; /* Menyebarkan box secara merata */
+  align-items: center; /* Menyelaraskan box secara vertikal */
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sosial-media,
+h2 {
+  color: #007bff;
+}
+
+.media-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  width: 150px; /* Atur lebar box */
+  text-align: center; /* Teks di tengah */
+}
+
+.media-item img {
+  width: 50px; /* Atur ukuran gambar */
+  height: 50px; /* Atur ukuran gambar */
+  margin-bottom: 10px; /* Jarak antara gambar dan teks */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Menambahkan transisi untuk efek hover */
+}
+
+.media-item:hover img {
+  transform: scale(1.1); /* Membuat gambar sedikit lebih besar saat di-hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Menambahkan shadow yang lebih dalam saat hover */
+}
+
+.kata-kata-motivasi {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0; /* Warna latar belakang yang lembut */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Teks di tengah */
+}
+
+.kata-kata-motivasi h2 {
+  color: #007bff; /* Warna judul */
+  margin-bottom: 20px; /* Jarak antara judul dan quotes */
+}
+
+.kata-kata-motivasi p {
+  font-style: italic; /* Gaya font miring untuk quotes */
+  color: #333; /* Warna teks */
+  margin-bottom: 15px; /* Jarak antar paragraf */
+}
+
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer::before {
+  content: "\00a9";
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.projek {
+    margin-top: 20px;
+  }
+  
+  .projek h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .projek-images {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .projek-images img {
+    width: 45%; 
+    height: 45%;
+    border-radius: 5px;
+  }
