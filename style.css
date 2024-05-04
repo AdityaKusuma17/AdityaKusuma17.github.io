@@ -264,3 +264,23 @@ footer::before {
     height: 45%;
     border-radius: 5px;
   }
+
+  .tugas {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .tugas-box {
+    width: 300px; /* Atur lebar sesuai kebutuhan */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .tugas-box:hover {
+    background-color: #e0e0e0; /* Warna latar belakang saat di-hover */
+    cursor: pointer; /* Ubah cursor menjadi pointer untuk memberi indikasi bisa diklik */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Tambahkan bayangan untuk efek mendalam */
+  }
